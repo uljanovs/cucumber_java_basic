@@ -38,7 +38,7 @@ in order to test that user can:
 
 [see wiki for Create-a-branch](https://github.com/uljanovs/selenium_java_basic/wiki/Create-a-branch)
 
-[see wiki for Git-add-commit-pust](https://github.com/uljanovs/cucumber_java_basic/wiki/Git-add-commit-push)
+[see wiki for Git-add-commit-push](https://github.com/uljanovs/selenium_java_basic/wiki/Git-add-commit-push)
 
 
 
