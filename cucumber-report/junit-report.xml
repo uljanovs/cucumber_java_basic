@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="73.9997">
-<testcase classname="Testing &quot;List of people&quot; page" name="I add person to the list" time="19.409725">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="59.439568">
+<testcase classname="Testing &quot;List of people&quot; page" name="I add person to the list" time="14.857202">
 <system-out><![CDATA[Given I am on the List page.................................................passed
 When I press add button.....................................................passed
 And I add "Jenny"...........................................................passed
@@ -10,7 +10,7 @@ And I check "nurse" is correct..............................................pass
 Then I reset list...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Testing &quot;List of people&quot; page" name="I add person to the list 2" time="19.482172">
+<testcase classname="Testing &quot;List of people&quot; page" name="I add person to the list 2" time="12.554586">
 <system-out><![CDATA[Given I am on the List page.................................................passed
 When I press add button.....................................................passed
 And I add "Mike"............................................................passed
@@ -21,7 +21,7 @@ And I check "doctor" is correct.............................................pass
 Then I reset list...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Testing &quot;List of people&quot; page" name="I edit a person in a list" time="18.057887">
+<testcase classname="Testing &quot;List of people&quot; page" name="I edit a person in a list" time="11.858756">
 <system-out><![CDATA[Given I am on the List page.................................................passed
 When I press edit button....................................................passed
 And I edit "Liza" and "janitor".............................................passed
@@ -30,11 +30,21 @@ And I check "Liza" and "janitor" edited correctly...........................pass
 Then I reset list...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Testing &quot;List of people&quot; page" name="I remove a person from list" time="17.049916">
+<testcase classname="Testing &quot;List of people&quot; page" name="I remove a person from list" time="10.488928">
 <system-out><![CDATA[Given I am on the List page.................................................passed
 When I press Delete button..................................................passed
 And I check that person removed.............................................passed
 Then I reset list...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing &quot;List of people&quot; page" name="I click on Clear button while adding a person" time="9.680096">
+<system-out><![CDATA[Given I am on the List page.................................................passed
+When I press add button.....................................................passed
+And I add "Joe".............................................................passed
+And add "HR"................................................................passed
+And I check fields "Joe" and "HR" are filled correctly......................passed
+And I press Clear button....................................................passed
+Then I check that fields are empty..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

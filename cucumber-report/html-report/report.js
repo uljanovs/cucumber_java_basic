@@ -83,7 +83,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 15897842600,
+  "duration": 10236008883,
   "status": "passed"
 });
 formatter.background({
@@ -102,7 +102,7 @@ formatter.match({
   "location": "Task2StepDef.iAmOnTheListPage()"
 });
 formatter.result({
-  "duration": 1072150500,
+  "duration": 1752324498,
   "status": "passed"
 });
 formatter.scenario({
@@ -164,7 +164,7 @@ formatter.match({
   "location": "Task2StepDef.iPressAddButton()"
 });
 formatter.result({
-  "duration": 754554100,
+  "duration": 511688684,
   "status": "passed"
 });
 formatter.match({
@@ -177,7 +177,7 @@ formatter.match({
   "location": "Task2StepDef.iAdd(String)"
 });
 formatter.result({
-  "duration": 150833400,
+  "duration": 252094614,
   "status": "passed"
 });
 formatter.match({
@@ -190,14 +190,14 @@ formatter.match({
   "location": "Task2StepDef.add(String)"
 });
 formatter.result({
-  "duration": 147190700,
+  "duration": 192945637,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iConfirmAddition()"
 });
 formatter.result({
-  "duration": 155416900,
+  "duration": 299297827,
   "status": "passed"
 });
 formatter.match({
@@ -210,7 +210,7 @@ formatter.match({
   "location": "Task2StepDef.iCheckThatIsCorrect(String)"
 });
 formatter.result({
-  "duration": 115696700,
+  "duration": 189758047,
   "status": "passed"
 });
 formatter.match({
@@ -223,22 +223,22 @@ formatter.match({
   "location": "Task2StepDef.iCheckIsCorrect(String)"
 });
 formatter.result({
-  "duration": 65275500,
+  "duration": 143253722,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iResetList()"
 });
 formatter.result({
-  "duration": 158700300,
+  "duration": 297531619,
   "status": "passed"
 });
 formatter.after({
-  "duration": 892064200,
+  "duration": 982298924,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15678838100,
+  "duration": 6811618692,
   "status": "passed"
 });
 formatter.background({
@@ -257,7 +257,7 @@ formatter.match({
   "location": "Task2StepDef.iAmOnTheListPage()"
 });
 formatter.result({
-  "duration": 1096010800,
+  "duration": 2818033383,
   "status": "passed"
 });
 formatter.scenario({
@@ -319,7 +319,7 @@ formatter.match({
   "location": "Task2StepDef.iPressAddButton()"
 });
 formatter.result({
-  "duration": 343144500,
+  "duration": 588124125,
   "status": "passed"
 });
 formatter.match({
@@ -332,7 +332,7 @@ formatter.match({
   "location": "Task2StepDef.iAdd(String)"
 });
 formatter.result({
-  "duration": 155923700,
+  "duration": 230005213,
   "status": "passed"
 });
 formatter.match({
@@ -345,14 +345,14 @@ formatter.match({
   "location": "Task2StepDef.add(String)"
 });
 formatter.result({
-  "duration": 223461800,
+  "duration": 330743716,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iConfirmAddition()"
 });
 formatter.result({
-  "duration": 422639100,
+  "duration": 361763704,
   "status": "passed"
 });
 formatter.match({
@@ -365,7 +365,7 @@ formatter.match({
   "location": "Task2StepDef.iCheckThatIsCorrect(String)"
 });
 formatter.result({
-  "duration": 213209500,
+  "duration": 163738552,
   "status": "passed"
 });
 formatter.match({
@@ -378,18 +378,18 @@ formatter.match({
   "location": "Task2StepDef.iCheckIsCorrect(String)"
 });
 formatter.result({
-  "duration": 109307100,
+  "duration": 158893026,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iResetList()"
 });
 formatter.result({
-  "duration": 208005300,
+  "duration": 308220718,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1031632500,
+  "duration": 783444547,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -451,7 +451,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 14734342800,
+  "duration": 6006316682,
   "status": "passed"
 });
 formatter.background({
@@ -470,7 +470,7 @@ formatter.match({
   "location": "Task2StepDef.iAmOnTheListPage()"
 });
 formatter.result({
-  "duration": 878176900,
+  "duration": 2917868256,
   "status": "passed"
 });
 formatter.scenario({
@@ -518,7 +518,7 @@ formatter.match({
   "location": "Task2StepDef.iPressEditButton()"
 });
 formatter.result({
-  "duration": 365336700,
+  "duration": 708888202,
   "status": "passed"
 });
 formatter.match({
@@ -535,14 +535,14 @@ formatter.match({
   "location": "Task2StepDef.iEditAnd(String,String)"
 });
 formatter.result({
-  "duration": 438889200,
+  "duration": 581695580,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iConfirmEditing()"
 });
 formatter.result({
-  "duration": 348713100,
+  "duration": 288471722,
   "status": "passed"
 });
 formatter.match({
@@ -559,22 +559,22 @@ formatter.match({
   "location": "Task2StepDef.iCheckAndEditedCorrectly(String,String)"
 });
 formatter.result({
-  "duration": 146846100,
+  "duration": 275724956,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iResetList()"
 });
 formatter.result({
-  "duration": 186179400,
+  "duration": 349471574,
   "status": "passed"
 });
 formatter.after({
-  "duration": 959402500,
+  "duration": 730319252,
   "status": "passed"
 });
 formatter.before({
-  "duration": 14710298500,
+  "duration": 6194056572,
   "status": "passed"
 });
 formatter.background({
@@ -593,7 +593,7 @@ formatter.match({
   "location": "Task2StepDef.iAmOnTheListPage()"
 });
 formatter.result({
-  "duration": 957504200,
+  "duration": 1662061116,
   "status": "passed"
 });
 formatter.scenario({
@@ -623,25 +623,227 @@ formatter.match({
   "location": "Task2StepDef.iPressDeleteButton()"
 });
 formatter.result({
-  "duration": 237040100,
+  "duration": 587811113,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iCheckThatPersonRemoved()"
 });
 formatter.result({
-  "duration": 66578200,
+  "duration": 111083288,
   "status": "passed"
 });
 formatter.match({
   "location": "Task2StepDef.iResetList()"
 });
 formatter.result({
-  "duration": 191017700,
+  "duration": 484934380,
   "status": "passed"
 });
 formatter.after({
-  "duration": 887477500,
+  "duration": 1448981121,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 35,
+  "name": "I click on Clear button while adding a person",
+  "description": "",
+  "id": "testing-\"list-of-people\"-page;i-click-on-clear-button-while-adding-a-person",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 36,
+  "name": "I press add button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 37,
+  "name": "I add \"\u003cname\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "add \"\u003cjob\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "I check fields \"\u003cname\u003e\" and \"\u003cjob\u003e\" are filled correctly",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "I press Clear button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 41,
+  "name": "I check that fields are empty",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 42,
+  "name": "",
+  "description": "",
+  "id": "testing-\"list-of-people\"-page;i-click-on-clear-button-while-adding-a-person;",
+  "rows": [
+    {
+      "cells": [
+        "name",
+        "job"
+      ],
+      "line": 43,
+      "id": "testing-\"list-of-people\"-page;i-click-on-clear-button-while-adding-a-person;;1"
+    },
+    {
+      "cells": [
+        "Joe",
+        "HR"
+      ],
+      "line": 44,
+      "id": "testing-\"list-of-people\"-page;i-click-on-clear-button-while-adding-a-person;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 6236106379,
+  "status": "passed"
+});
+formatter.background({
+  "line": 4,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "I am on the List page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Task2StepDef.iAmOnTheListPage()"
+});
+formatter.result({
+  "duration": 1374198485,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 44,
+  "name": "I click on Clear button while adding a person",
+  "description": "",
+  "id": "testing-\"list-of-people\"-page;i-click-on-clear-button-while-adding-a-person;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 36,
+  "name": "I press add button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 37,
+  "name": "I add \"Joe\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "add \"HR\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "I check fields \"Joe\" and \"HR\" are filled correctly",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "I press Clear button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 41,
+  "name": "I check that fields are empty",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Task2StepDef.iPressAddButton()"
+});
+formatter.result({
+  "duration": 458576730,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Joe",
+      "offset": 7
+    }
+  ],
+  "location": "Task2StepDef.iAdd(String)"
+});
+formatter.result({
+  "duration": 214805666,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "HR",
+      "offset": 5
+    }
+  ],
+  "location": "Task2StepDef.add(String)"
+});
+formatter.result({
+  "duration": 181052726,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Joe",
+      "offset": 16
+    },
+    {
+      "val": "HR",
+      "offset": 26
+    }
+  ],
+  "location": "Task2StepDef.iCheckFieldsAndAreFilledCorrectly(String,String)"
+});
+formatter.result({
+  "duration": 87539665,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Task2StepDef.iPressClearButton()"
+});
+formatter.result({
+  "duration": 281058986,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Task2StepDef.iCheckThatFieldsAreEmpty()"
+});
+formatter.result({
+  "duration": 113338512,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 733418582,
   "status": "passed"
 });
 });

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1072150500,
+              "duration": 1752324498,
               "status": "passed"
             },
             "line": 5,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 15897842600,
+              "duration": 10236008883,
               "status": "passed"
             },
             "match": {
@@ -42,7 +42,7 @@
         "after": [
           {
             "result": {
-              "duration": 892064200,
+              "duration": 982298924,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
         "steps": [
           {
             "result": {
-              "duration": 754554100,
+              "duration": 511688684,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 150833400,
+              "duration": 252094614,
               "status": "passed"
             },
             "line": 9,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 147190700,
+              "duration": 192945637,
               "status": "passed"
             },
             "line": 10,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 155416900,
+              "duration": 299297827,
               "status": "passed"
             },
             "line": 11,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 115696700,
+              "duration": 189758047,
               "status": "passed"
             },
             "line": 12,
@@ -142,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 65275500,
+              "duration": 143253722,
               "status": "passed"
             },
             "line": 13,
@@ -163,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 158700300,
+              "duration": 297531619,
               "status": "passed"
             },
             "line": 14,
@@ -184,7 +184,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1096010800,
+              "duration": 2818033383,
               "status": "passed"
             },
             "line": 5,
@@ -200,7 +200,7 @@
         "before": [
           {
             "result": {
-              "duration": 15678838100,
+              "duration": 6811618692,
               "status": "passed"
             },
             "match": {
@@ -215,7 +215,7 @@
         "after": [
           {
             "result": {
-              "duration": 1031632500,
+              "duration": 783444547,
               "status": "passed"
             },
             "match": {
@@ -228,7 +228,7 @@
         "steps": [
           {
             "result": {
-              "duration": 343144500,
+              "duration": 588124125,
               "status": "passed"
             },
             "line": 8,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 155923700,
+              "duration": 230005213,
               "status": "passed"
             },
             "line": 9,
@@ -261,7 +261,7 @@
           },
           {
             "result": {
-              "duration": 223461800,
+              "duration": 330743716,
               "status": "passed"
             },
             "line": 10,
@@ -282,7 +282,7 @@
           },
           {
             "result": {
-              "duration": 422639100,
+              "duration": 361763704,
               "status": "passed"
             },
             "line": 11,
@@ -294,7 +294,7 @@
           },
           {
             "result": {
-              "duration": 213209500,
+              "duration": 163738552,
               "status": "passed"
             },
             "line": 12,
@@ -315,7 +315,7 @@
           },
           {
             "result": {
-              "duration": 109307100,
+              "duration": 158893026,
               "status": "passed"
             },
             "line": 13,
@@ -336,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 208005300,
+              "duration": 308220718,
               "status": "passed"
             },
             "line": 14,
@@ -357,7 +357,7 @@
         "steps": [
           {
             "result": {
-              "duration": 878176900,
+              "duration": 2917868256,
               "status": "passed"
             },
             "line": 5,
@@ -373,7 +373,7 @@
         "before": [
           {
             "result": {
-              "duration": 14734342800,
+              "duration": 6006316682,
               "status": "passed"
             },
             "match": {
@@ -388,7 +388,7 @@
         "after": [
           {
             "result": {
-              "duration": 959402500,
+              "duration": 730319252,
               "status": "passed"
             },
             "match": {
@@ -401,7 +401,7 @@
         "steps": [
           {
             "result": {
-              "duration": 365336700,
+              "duration": 708888202,
               "status": "passed"
             },
             "line": 21,
@@ -413,7 +413,7 @@
           },
           {
             "result": {
-              "duration": 438889200,
+              "duration": 581695580,
               "status": "passed"
             },
             "line": 22,
@@ -439,7 +439,7 @@
           },
           {
             "result": {
-              "duration": 348713100,
+              "duration": 288471722,
               "status": "passed"
             },
             "line": 23,
@@ -451,7 +451,7 @@
           },
           {
             "result": {
-              "duration": 146846100,
+              "duration": 275724956,
               "status": "passed"
             },
             "line": 24,
@@ -477,7 +477,7 @@
           },
           {
             "result": {
-              "duration": 186179400,
+              "duration": 349471574,
               "status": "passed"
             },
             "line": 25,
@@ -498,7 +498,7 @@
         "steps": [
           {
             "result": {
-              "duration": 957504200,
+              "duration": 1662061116,
               "status": "passed"
             },
             "line": 5,
@@ -514,7 +514,7 @@
         "before": [
           {
             "result": {
-              "duration": 14710298500,
+              "duration": 6194056572,
               "status": "passed"
             },
             "match": {
@@ -529,7 +529,7 @@
         "after": [
           {
             "result": {
-              "duration": 887477500,
+              "duration": 1448981121,
               "status": "passed"
             },
             "match": {
@@ -542,7 +542,7 @@
         "steps": [
           {
             "result": {
-              "duration": 237040100,
+              "duration": 587811113,
               "status": "passed"
             },
             "line": 31,
@@ -554,7 +554,7 @@
           },
           {
             "result": {
-              "duration": 66578200,
+              "duration": 111083288,
               "status": "passed"
             },
             "line": 32,
@@ -566,13 +566,170 @@
           },
           {
             "result": {
-              "duration": 191017700,
+              "duration": 484934380,
               "status": "passed"
             },
             "line": 33,
             "name": "I reset list",
             "match": {
               "location": "Task2StepDef.iResetList()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1374198485,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the List page",
+            "match": {
+              "location": "Task2StepDef.iAmOnTheListPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6236106379,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "I click on Clear button while adding a person",
+        "description": "",
+        "id": "testing-\"list-of-people\"-page;i-click-on-clear-button-while-adding-a-person;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 733418582,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 458576730,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I press add button",
+            "match": {
+              "location": "Task2StepDef.iPressAddButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 214805666,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I add \"Joe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Joe",
+                  "offset": 7
+                }
+              ],
+              "location": "Task2StepDef.iAdd(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181052726,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "add \"HR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HR",
+                  "offset": 5
+                }
+              ],
+              "location": "Task2StepDef.add(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87539665,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I check fields \"Joe\" and \"HR\" are filled correctly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Joe",
+                  "offset": 16
+                },
+                {
+                  "val": "HR",
+                  "offset": 26
+                }
+              ],
+              "location": "Task2StepDef.iCheckFieldsAndAreFilledCorrectly(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 281058986,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I press Clear button",
+            "match": {
+              "location": "Task2StepDef.iPressClearButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113338512,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I check that fields are empty",
+            "match": {
+              "location": "Task2StepDef.iCheckThatFieldsAreEmpty()"
             },
             "keyword": "Then "
           }

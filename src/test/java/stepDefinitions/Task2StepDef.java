@@ -37,34 +37,40 @@ public class Task2StepDef {
     public void iPressAddButton() {
         listPage.addPerson();
     }
+
     @And("^I add \"([^\"]*)\"$")
     public void iAdd(String name) throws Throwable {
         listPage.enterName().sendKeys(name);
     }
+
     @And("^add \"([^\"]*)\"$")
     public void add(String job) throws Throwable {
         listPage.enterJob().sendKeys(job);
     }
+
     @And("^I confirm addition$")
     public void iConfirmAddition() throws InterruptedException {
         listPage.confirmAddition();
 
     }
+
     @And("^I check that \"([^\"]*)\" is correct$")
     public void iCheckThatIsCorrect(String name) throws Throwable {
-        WebDriverWait wait =(WebDriverWait)
+        WebDriverWait wait = (WebDriverWait)
                 new WebDriverWait(driver, 10).ignoring(StaleElementReferenceException.class);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#person3 > span.w3-xlarge.name")));
         assertEquals(name, listPage.addedName());
         //driver.findElement(By.cssSelector("#person3 > span.w3-xlarge.name"))
     }
+
     @And("^I check \"([^\"]*)\" is correct$")
     public void iCheckIsCorrect(String job) throws Throwable {
-        WebDriverWait wait =(WebDriverWait)
+        WebDriverWait wait = (WebDriverWait)
                 new WebDriverWait(driver, 10).ignoring(StaleElementReferenceException.class);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"person3\"]/span[4]")));
         assertEquals(job, listPage.addedJob());
     }
+
     @Then("^I reset list$")
     public void iResetList() {
         listPage.resetList();
@@ -73,7 +79,7 @@ public class Task2StepDef {
 
     @When("^I press edit button$")
     public void iPressEditButton() {
-    listPage.editPerson();
+        listPage.editPerson();
     }
 
     @And("^I edit \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -86,12 +92,12 @@ public class Task2StepDef {
 
     @And("^I confirm editing$")
     public void iConfirmEditing() {
-    listPage.confirmEdition();
+        listPage.confirmEdition();
     }
 
     @And("^I check \"([^\"]*)\" and \"([^\"]*)\" edited correctly$")
     public void iCheckAndEditedCorrectly(String name, String job) throws Throwable {
-        WebDriverWait wait =(WebDriverWait)
+        WebDriverWait wait = (WebDriverWait)
                 new WebDriverWait(driver, 10).ignoring(StaleElementReferenceException.class);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"person0\"]/span[3]")));
         assertEquals(name, listPage.editedName());
@@ -111,4 +117,23 @@ public class Task2StepDef {
         assertEquals(0, driver.findElements(By.xpath("//*[@id=\"person0\"]/span[4]")).size());
 
     }
+
+    @And("^I check fields \"([^\"]*)\" and \"([^\"]*)\" are filled correctly$")
+    public void iCheckFieldsAndAreFilledCorrectly(String name, String job) throws Throwable {
+        assertEquals(name, listPage.enterName().getAttribute("value"));
+        assertEquals(job, listPage.enterJob().getAttribute("value"));
+    }
+
+    @And("^I press Clear button$")
+    public void iPressClearButton() {
+        listPage.clearFields();
+    }
+
+    @Then("^I check that fields are empty$")
+    public void iCheckThatFieldsAreEmpty() {
+        assertEquals("", listPage.enterName().getAttribute("value"));
+        assertEquals("", listPage.enterName().getAttribute("value"));
+    }
+
+
 }

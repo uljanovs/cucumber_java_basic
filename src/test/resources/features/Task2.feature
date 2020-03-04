@@ -32,11 +32,14 @@ Feature: Testing "List of people" page
     And I check that person removed
     Then I reset list
 
-  Scenario: I click on Clear button while adding a person
-    When When I press add button
-    And I add "name"
-    And add "job"
-    And I check fields are filled correctly
+  Scenario Outline: I click on Clear button while adding a person
+    When I press add button
+    And I add "<name>"
+    And add "<job>"
+    And I check fields "<name>" and "<job>" are filled correctly
     And I press Clear button
     Then I check that fields are empty
+    Examples:
+      | name | job |
+      | Joe  | HR  |
 
