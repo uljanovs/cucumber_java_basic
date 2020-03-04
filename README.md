@@ -10,7 +10,7 @@
 #### Task 1
 In [Task1.feature](../master/src/test/resources/features/Task1.feature) create 1 scenario outline and
 1 scenario for page with url:
-"https://kristinek.github.io/site/tasks/enter_a_number"
+"https://uljanovs.github.io/site/tasks/enter_a_number"
   * Scenario outline for error cases:
       * enter number too small
       * enter number too big
@@ -19,7 +19,7 @@ In [Task1.feature](../master/src/test/resources/features/Task1.feature) create 1
 
 #### Task 2
 In [Task2.feature](../master/src/test/resources/features/Task2.feature) create 1 scenario outline and
-create scenario or scenario outlines for page https://kristinek.github.io/site/tasks/list_of_people.html or https://kristinek.github.io/site/tasks/list_of_people_with_jobs.html
+create scenario or scenario outlines for page https://kristinek.github.io/site/tasks/list_of_people.html or https://uljanovs.github.io/site/tasks/list_of_people_with_jobs.html
 in order to test that user can:
   * add a new person
   * edit a person
@@ -31,14 +31,14 @@ in order to test that user can:
   * check that clear button on adding a user works correctly
 
 ### Setup 
-[see wiki](https://github.com/KristineK/cucumber_java_basic/wiki/Setup)
+[see wiki](https://github.com/uljanovs/cucumber_java_basic/wiki/Setup)
 
 ---
 ### GIT
 
-[see wiki for Create-a-branch](https://github.com/KristineK/selenium_java_basic/wiki/Create-a-branch)
+[see wiki for Create-a-branch](https://github.com/uljanovs/selenium_java_basic/wiki/Create-a-branch)
 
-[see wiki for Git-add-commit-pust](https://github.com/KristineK/cucumber_java_basic/wiki/Git-add-commit-pust)
+[see wiki for Git-add-commit-pust](https://github.com/uljanovs/cucumber_java_basic/wiki/Git-add-commit-pust)
 
 
 
