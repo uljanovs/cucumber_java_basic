@@ -23,7 +23,7 @@ public class SampleSteps {
 
     @Given("^I am on the home page$")
     public void iAmOnTheHomePage() throws Throwable {
-        driver.get("https://kristinek.github.io/site");
+        driver.get("https://uljanovs.github.io/site");
     }
 
     @Then("^I should see home page header$")
@@ -51,7 +51,7 @@ public class SampleSteps {
 
     @Given("^I (?:am on|open) age page$")
     public void iAmOnAgePage() throws Throwable {
-        driver.get("https://kristinek.github.io/site/examples/age");
+        driver.get("https://uljanovs.github.io/site/examples/age");
     }
 
     @And("^I click submit age$")
@@ -98,6 +98,6 @@ public class SampleSteps {
 
     @Given("^I am on action page$")
     public void iAmOnActionPage() {
-        driver.get("https://kristinek.github.io/site/examples/actions");
+        driver.get("https://uljanovs.github.io/site/examples/actions");
     }
 }
