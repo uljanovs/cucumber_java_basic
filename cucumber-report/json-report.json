@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9630715100,
+              "duration": 26195814400,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Simple scenario 2",
+        "line": 4,
+        "name": "As an end user I can search cats using the google",
         "description": "",
-        "id": "introduction-to-cucumber-part-1;simple-scenario-2",
+        "id": "as-an-end-user-i-need-a-google-search-feature;as-an-end-user-i-can-search-cats-using-the-google",
         "after": [
           {
             "result": {
-              "duration": 691125400,
+              "duration": 1080699300,
               "status": "passed"
             },
             "match": {
@@ -34,28 +34,117 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1775296000,
+              "status": "passed"
             },
-            "comments": [
-              {
-                "line": 12,
-                "value": "#Given Hi MAN!"
-              },
-              {
-                "line": 13,
-                "value": "# And I should see home page description like my wife"
-              }
-            ],
-            "line": 14,
-            "name": "I should see Tamilla and Infvars",
-            "match": {},
+            "line": 5,
+            "name": "I am on Google page",
+            "match": {
+              "location": "GoogleSteps.iAmOnActionPage()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@cat"
+          }
+        ]
+      }
+    ],
+    "name": "As an end user I need a Google search feature",
+    "description": "",
+    "id": "as-an-end-user-i-need-a-google-search-feature",
+    "keyword": "Feature",
+    "uri": "Activity_2.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20680359500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Simple scenario",
+        "description": "",
+        "id": "introduction-to-cucumber-part-1;simple-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 1918041900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1702014500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the home page",
+            "match": {
+              "location": "SampleSteps.iAmOnTheHomePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 321758700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see home page header",
+            "match": {
+              "location": "SampleSteps.iShouldSeeHomePageHeader()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 124154300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see home page description",
+            "match": {
+              "location": "SampleSteps.iShouldSeeHomePageDescription()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107350600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see menu",
+            "match": {
+              "location": "SampleSteps.iShouldSeeMenu()"
+            },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 10,
-            "name": "@smoke"
+            "line": 4,
+            "name": "@cat"
           }
         ]
       }

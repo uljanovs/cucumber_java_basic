@@ -1,6 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="10.321841">
-<testcase classname="Introduction to cucumber part 1" name="Simple scenario 2" time="10.321841">
-<skipped><![CDATA[And I should see Tamilla and Infvars........................................undefined
-]]></skipped>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="53.905489">
+<testcase classname="As an end user I need a Google search feature" name="As an end user I can search cats using the google" time="29.05181">
+<system-out><![CDATA[Given I am on Google page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Introduction to cucumber part 1" name="Simple scenario" time="24.853679">
+<system-out><![CDATA[When I am on the home page..................................................passed
+Then I should see home page header..........................................passed
+And I should see home page description......................................passed
+And I should see menu.......................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

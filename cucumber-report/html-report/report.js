@@ -1,4 +1,46 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Sample1.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Activity_2.feature");
+formatter.feature({
+  "line": 1,
+  "name": "As an end user I need a Google search feature",
+  "description": "",
+  "id": "as-an-end-user-i-need-a-google-search-feature",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 26195814400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 4,
+  "name": "As an end user I can search cats using the google",
+  "description": "",
+  "id": "as-an-end-user-i-need-a-google-search-feature;as-an-end-user-i-can-search-cats-using-the-google",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@cat"
+    }
+  ]
+});
+formatter.step({
+  "line": 5,
+  "name": "I am on Google page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "GoogleSteps.iAmOnActionPage()"
+});
+formatter.result({
+  "duration": 1775296000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1080699300,
+  "status": "passed"
+});
+formatter.uri("Sample1.feature");
 formatter.feature({
   "line": 1,
   "name": "Introduction to cucumber part 1",
@@ -7,44 +49,73 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9630715100,
+  "duration": 20680359500,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 11,
-  "name": "Simple scenario 2",
+  "line": 5,
+  "name": "Simple scenario",
   "description": "",
-  "id": "introduction-to-cucumber-part-1;simple-scenario-2",
+  "id": "introduction-to-cucumber-part-1;simple-scenario",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 10,
-      "name": "@smoke"
+      "line": 4,
+      "name": "@cat"
     }
   ]
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 12,
-      "value": "#Given Hi MAN!"
-    },
-    {
-      "line": 13,
-      "value": "# And I should see home page description like my wife"
-    }
-  ],
-  "line": 14,
-  "name": "I should see Tamilla and Infvars",
+  "line": 6,
+  "name": "I am on the home page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I should see home page header",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "I should see home page description",
   "keyword": "And "
 });
-formatter.match({});
+formatter.step({
+  "line": 9,
+  "name": "I should see menu",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SampleSteps.iAmOnTheHomePage()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1702014500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SampleSteps.iShouldSeeHomePageHeader()"
+});
+formatter.result({
+  "duration": 321758700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SampleSteps.iShouldSeeHomePageDescription()"
+});
+formatter.result({
+  "duration": 124154300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SampleSteps.iShouldSeeMenu()"
+});
+formatter.result({
+  "duration": 107350600,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 691125400,
+  "duration": 1918041900,
   "status": "passed"
 });
 });

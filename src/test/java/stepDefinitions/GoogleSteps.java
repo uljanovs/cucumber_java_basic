@@ -6,6 +6,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.util.List;
 import java.util.Map;
@@ -22,6 +23,25 @@ public class GoogleSteps {
 
     @Given("^I am on Google page$")
     public void iAmOnActionPage() {
-        driver.get("https://uljanovs.github.io/site/examples/actions");
+        driver.get("https://www.google.com/");
     }
+    @When("^I Click on Search Field$")
+    public void iClickSearchField() {
+        driver.findElement(By.name("q")).click();
+    }
+    @When("^I Enter Cat$")
+    public void iEnterCat() {
+        driver.findElement(By.name("q")).sendKeys("cat");;
+    }
+    @When("^I Click on Search Button$")
+    public void iClickSearchButton() {
+    WebElement SearchButton = driver.findElement(By.name("btnK"));
+    SearchButton.click();
+    }
+    @Then("^I see Cats$")
+        public void iSeeResult() {
+            assertTrue(driver.findElement(By.name("q")).getAttribute("value").equals("cat"));
+    }
+
 }
+
