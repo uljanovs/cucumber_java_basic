@@ -82,6 +82,9 @@ public class SampleSteps {
     @And("^I click the result checkbox button$")
     public void iClickTheResultCheckboxButton() throws Throwable {
         driver.findElement(By.id("result_button_checkbox")).click();
+
+
+
     }
 
     @When("^I clicked on checkboxes:$")

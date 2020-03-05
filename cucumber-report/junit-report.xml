@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0">
-<testcase classname="dummy" name="dummy">
-<skipped message="No features found"/>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.606451">
+<testcase classname="Introduction to cucumber part 4" name="a new scenario with 1-row table" time="29.606451">
+<system-out><![CDATA[Given I am on age page......................................................passed
+Given I am on action page...................................................passed
+When I clicked on checkboxes:...............................................passed
+And I click the result checkbox button......................................passed
+Then message for checkboxes "You selected value(s): Option 1, Option 3" is seen.passed
+]]></system-out>
 </testcase>
 </testsuite>

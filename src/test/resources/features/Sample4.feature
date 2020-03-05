@@ -5,7 +5,7 @@ Feature: Introduction to cucumber part 4
 
   Background:
     Given I am on age page
-
+  @smoke
   Scenario: a new scenario with 1-row table
     Given I am on action page
     When I clicked on checkboxes:

@@ -1,1 +1,149 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1764352100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on age page",
+            "match": {
+              "location": "SampleSteps.iAmOnAgePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16197501700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "a new scenario with 1-row table",
+        "description": "",
+        "id": "introduction-to-cucumber-part-4;a-new-scenario-with-1-row-table",
+        "after": [
+          {
+            "result": {
+              "duration": 897944900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 405369600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on action page",
+            "match": {
+              "location": "SampleSteps.iAmOnActionPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10178288500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I clicked on checkboxes:",
+            "match": {
+              "location": "SampleSteps.iClickedOnCheckboxes(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Option 1"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Option 3"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97560800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click the result checkbox button",
+            "match": {
+              "location": "SampleSteps.iClickTheResultCheckboxButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65433600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "message for checkboxes \"You selected value(s): Option 1, Option 3\" is seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "You selected value(s): Option 1, Option 3",
+                  "offset": 24
+                }
+              ],
+              "location": "SampleSteps.messageForCheckboxesIsSeen(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Introduction to cucumber part 4",
+    "description": "As a test engineer\r\nI want to be able to write and execute a scenario with steps that have 1 column table",
+    "id": "introduction-to-cucumber-part-4",
+    "keyword": "Feature",
+    "uri": "Sample4.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      },
+      {
+        "line": 1,
+        "name": "@part4"
+      }
+    ]
+  }
+]
