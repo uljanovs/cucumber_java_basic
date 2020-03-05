@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16057686700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "As an end user I can search cats using Google",
+        "description": "",
+        "id": "tests-for-performing-search;as-an-end-user-i-can-search-cats-using-google",
+        "after": [
+          {
+            "result": {
+              "duration": 1244265400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2125590000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on google page",
+            "match": {
+              "location": "ActivitySteps.i_am_on_google_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 297458400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter cute cats to the search field",
+            "match": {
+              "location": "ActivitySteps.i_enter_cute_cats_to_the_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2083791400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press Search button",
+            "match": {
+              "location": "ActivitySteps.i_press_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50817100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see search results",
+            "match": {
+              "location": "ActivitySteps.i_should_see_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@cat"
+          }
+        ]
+      }
+    ],
+    "name": "tests for performing search",
+    "description": "As an end user I need to use a Google search",
+    "id": "tests-for-performing-search",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Activity.feature"
+  }
+]

@@ -96,6 +96,7 @@ public class SampleSteps {
         assertEquals(message, driver.findElement(By.id("result_checkbox")).getText());
     }
 
+
     @Given("^I am on action page$")
     public void iAmOnActionPage() {
         driver.get("https://uljanovs.github.io/site/examples/actions");

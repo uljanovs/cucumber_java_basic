@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0">
-<testcase classname="dummy" name="dummy">
-<skipped message="No features found"/>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.859609">
+<testcase classname="tests for performing search" name="As an end user I can search cats using Google" time="21.859609">
+<system-out><![CDATA[Given I am on google page...................................................passed
+When I enter cute cats to the search field..................................passed
+And I press Search button...................................................passed
+Then I should see search results............................................passed
+]]></system-out>
 </testcase>
 </testsuite>
