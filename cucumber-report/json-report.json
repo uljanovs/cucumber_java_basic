@@ -1,1 +1,69 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9630715100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Simple scenario 2",
+        "description": "",
+        "id": "introduction-to-cucumber-part-1;simple-scenario-2",
+        "after": [
+          {
+            "result": {
+              "duration": 691125400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "#Given Hi MAN!"
+              },
+              {
+                "line": 13,
+                "value": "# And I should see home page description like my wife"
+              }
+            ],
+            "line": 14,
+            "name": "I should see Tamilla and Infvars",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Introduction to cucumber part 1",
+    "description": "As a test engineer\r\nI want to be able to write and execute a simple scenario",
+    "id": "introduction-to-cucumber-part-1",
+    "keyword": "Feature",
+    "uri": "Sample1.feature"
+  }
+]

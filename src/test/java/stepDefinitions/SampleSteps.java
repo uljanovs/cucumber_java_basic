@@ -37,6 +37,14 @@ public class SampleSteps {
         assertEquals("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 driver.findElement(By.cssSelector("p")).getText());
     }
+    @Given("^I should see home page description like my wife$")
+    public void i_should_see_home_page_description_like_my_wife() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+    }
+    @Given("^I should see Tamilla$")
+    public void i_should_see_Tamilla() throws Throwable {
+        driver.get("https://uljanovs.github.io/site/examples/age");
+    }
 
     @When("^I enter name: \"([^\"]*)\"$")
     public void iEnterName(String name) throws Throwable {

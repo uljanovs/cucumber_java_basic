@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0">
-<testcase classname="dummy" name="dummy">
-<skipped message="No features found"/>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="10.321841">
+<testcase classname="Introduction to cucumber part 1" name="Simple scenario 2" time="10.321841">
+<skipped><![CDATA[And I should see Tamilla and Infvars........................................undefined
+]]></skipped>
 </testcase>
 </testsuite>

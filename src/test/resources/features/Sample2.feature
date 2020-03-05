@@ -4,6 +4,7 @@ Feature: Introduction to cucumber part 2
 
   Background:
     Given I am on age page
+    Given I open age page
 @super
   Scenario: a new scenario 1 with regex
     When I enter name: "Ann"
