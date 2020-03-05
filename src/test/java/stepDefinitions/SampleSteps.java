@@ -21,7 +21,7 @@ public class SampleSteps {
         this.driver = Hooks.driver;
     }
 
-    @Given("^I am on googling page$")
+   /* @Given("^I am on googling page$")
     public void i_am_on_googling_page() throws Throwable {
 
         driver.get("https://www.google.com/");
@@ -59,7 +59,7 @@ public class SampleSteps {
     }
 
 
-
+*/
 
 
     @Given("^I am on the home page$")
