@@ -31,7 +31,7 @@ in order to test that user can:
   * check that clear button on adding a user works correctly
 
 ### Setup 
-[see wiki](https://github.com/uljanovs/cucumber_java_basic/wiki/Setup)
+[see wiki](https://github.com/uljanovs/cucumber_java_basic/wiki/Setup-Cucumber)
 
 ---
 ### GIT
