@@ -100,4 +100,10 @@ public class SampleSteps {
     public void iAmOnActionPage() {
         driver.get("https://uljanovs.github.io/site/examples/actions");
     }
+
+    @Given("^I should see Tamilla$")
+    public void i_should_see_Tamilla() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
 }
