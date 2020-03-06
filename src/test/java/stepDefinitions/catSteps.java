@@ -42,6 +42,28 @@ public class catSteps {
         assertEquals("https://en.wikipedia.org/wiki/Cat", driver.getCurrentUrl());
 //assertTrue(driver.findElement(By.xpath("//*[@id=\"result-stats\"]")).isDisplayed());
 
+
+            }
+            @Given("^i am on youtube search results$")
+            public void iAmOnYoutube() throws Throwable {
+                driver.get("https://www.youtube.com/results?search_query=cat+meowing");
         }
+    @When("^i click on video$")
+    public void iclickOnVideo() throws Throwable {
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//a[.='10 CATS MEOWING | Make your Cat or Dog Go Crazy! HD Sound Effect']")).click();
+
+
+
+    }
+
+    @Then("^cats are meaowing$")
+    public void meaow() throws Throwable {
+        Thread.sleep(10000);
+
+
+
+    }
+
     }
 
