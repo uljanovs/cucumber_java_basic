@@ -3,10 +3,31 @@
     "line": 1,
     "elements": [
       {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1458489700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on People with jobs page",
+            "match": {
+              "location": "task2steps.i_am_on_People_with_jobs_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
         "before": [
           {
             "result": {
-              "duration": 15453501200,
+              "duration": 17754411000,
               "status": "passed"
             },
             "match": {
@@ -14,14 +35,340 @@
             }
           }
         ],
-        "line": 6,
-        "name": "As and end user I can search cats using google",
+        "line": 16,
+        "name": "I add a new person and reset list",
         "description": "",
-        "id": "i-google-stuff;as-and-end-user-i-can-search-cats-using-google",
+        "id": "i-test-numbers;i-add-a-new-person-and-reset-list;;2",
         "after": [
           {
             "result": {
-              "duration": 1175014700,
+              "duration": 1097945900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 356396900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press add person button",
+            "match": {
+              "location": "task2steps.i_press_add_person_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164945200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter the name: \"john\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john",
+                  "offset": 19
+                }
+              ],
+              "location": "task2steps.i_enter_the_name(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153746200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter job: \"janitor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "janitor",
+                  "offset": 14
+                }
+              ],
+              "location": "task2steps.i_enter_job(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2563971300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I press add",
+            "match": {
+              "location": "task2steps.i_press_add()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 222347100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I check that person is added: \"john\" \"janitor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john",
+                  "offset": 31
+                },
+                {
+                  "val": "janitor",
+                  "offset": 38
+                }
+              ],
+              "location": "task2steps.i_check_that_person_is_added(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261725300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I reset list",
+            "match": {
+              "location": "task2steps.i_reset_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@addperson"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 815426600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on People with jobs page",
+            "match": {
+              "location": "task2steps.i_am_on_People_with_jobs_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 17289385400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "I add a new person and reset list",
+        "description": "",
+        "id": "i-test-numbers;i-add-a-new-person-and-reset-list;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1032067800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 296253100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press add person button",
+            "match": {
+              "location": "task2steps.i_press_add_person_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140654300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter the name: \"jane\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jane",
+                  "offset": 19
+                }
+              ],
+              "location": "task2steps.i_enter_the_name(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143474700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter job: \"cleaner\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cleaner",
+                  "offset": 14
+                }
+              ],
+              "location": "task2steps.i_enter_job(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153165700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I press add",
+            "match": {
+              "location": "task2steps.i_press_add()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 102408400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I check that person is added: \"jane\" \"cleaner\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jane",
+                  "offset": 31
+                },
+                {
+                  "val": "cleaner",
+                  "offset": 38
+                }
+              ],
+              "location": "task2steps.i_check_that_person_is_added(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331886900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I reset list",
+            "match": {
+              "location": "task2steps.i_reset_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@addperson"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 761921700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on People with jobs page",
+            "match": {
+              "location": "task2steps.i_am_on_People_with_jobs_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13010740800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "I edit person",
+        "description": "",
+        "id": "i-test-numbers;i-edit-person",
+        "after": [
+          {
+            "result": {
+              "duration": 1124929500,
               "status": "passed"
             },
             "match": {
@@ -34,119 +381,349 @@
         "steps": [
           {
             "result": {
-              "duration": 2122749300,
+              "duration": 390481900,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I am on googling page",
+            "line": 21,
+            "name": "I press edit button",
             "match": {
-              "location": "GoogleSteps.i_am_on_googling_page()"
+              "location": "task2steps.i_press_edit_button()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 218627900,
+              "duration": 307700100,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I enter search phrase: \"cat\"",
+            "line": 22,
+            "name": "I edit name: \"NewName\"",
             "match": {
               "arguments": [
                 {
-                  "val": "cat",
-                  "offset": 24
+                  "val": "NewName",
+                  "offset": 14
                 }
               ],
-              "location": "GoogleSteps.i_enter_search_phrase(String)"
+              "location": "task2steps.i_edit_name(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1997331500,
+              "duration": 308046500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I click search",
+            "line": 23,
+            "name": "I edit job: \"NewJob\"",
             "match": {
-              "location": "GoogleSteps.i_click_search()"
+              "arguments": [
+                {
+                  "val": "NewJob",
+                  "offset": 13
+                }
+              ],
+              "location": "task2steps.i_edit_job(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 29034200,
+              "duration": 206062000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I confirm i searched for: \"cat\"",
+            "line": 24,
+            "name": "I press edit",
             "match": {
-              "arguments": [
-                {
-                  "val": "cat",
-                  "offset": 27
-                }
-              ],
-              "location": "GoogleSteps.i_confirm_i_searched_for(String)"
+              "location": "task2steps.i_press_edit()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 10000360800,
+              "duration": 120428900,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I look at cats for 10 seconds",
+            "line": 25,
+            "name": "I check that person is edited: \"NewName\" \"NewJob\"",
             "match": {
               "arguments": [
                 {
-                  "val": "10",
-                  "offset": 19
+                  "val": "NewName",
+                  "offset": 32
+                },
+                {
+                  "val": "NewJob",
+                  "offset": 42
                 }
               ],
-              "location": "GoogleSteps.i_look_at_cats_for_seconds(int)"
+              "location": "task2steps.i_check_that_person_is_edited(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 261292500,
+              "duration": 170241800,
               "status": "passed"
             },
-            "line": 13,
-            "name": "I go back",
+            "line": 26,
+            "name": "I reset list",
             "match": {
-              "location": "GoogleSteps.i_go_back()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35266300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I confirm im in google",
-            "match": {
-              "location": "GoogleSteps.i_confirm_im_in_google()"
+              "location": "task2steps.i_reset_list()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 5,
-            "name": "@cat"
+            "line": 19,
+            "name": "@editperson"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 738199000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on People with jobs page",
+            "match": {
+              "location": "task2steps.i_am_on_People_with_jobs_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14203295100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "I remove person",
+        "description": "",
+        "id": "i-test-numbers;i-remove-person",
+        "after": [
+          {
+            "result": {
+              "duration": 916210500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 297198200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I press remove person",
+            "match": {
+              "location": "task2steps.i_press_remove_person()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38120200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I check that person is removed",
+            "match": {
+              "location": "task2steps.i_check_that_person_is_removed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136445900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I reset list",
+            "match": {
+              "location": "task2steps.i_reset_list()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 28,
+            "name": "@removeperson"
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 749400500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on People with jobs page",
+            "match": {
+              "location": "task2steps.i_am_on_People_with_jobs_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15600329100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "I check Clear all fields button",
+        "description": "",
+        "id": "i-test-numbers;i-check-clear-all-fields-button",
+        "after": [
+          {
+            "result": {
+              "duration": 955661000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 280105300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I press add person button",
+            "match": {
+              "location": "task2steps.i_press_add_person_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155769400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I enter the name: \"John\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 19
+                }
+              ],
+              "location": "task2steps.i_enter_the_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130883600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I enter job: \"Janitor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Janitor",
+                  "offset": 14
+                }
+              ],
+              "location": "task2steps.i_enter_job(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118777600,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click clear all fields",
+            "match": {
+              "location": "task2steps.i_click_clear_all_fields()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54742800,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I check that fields are empty",
+            "match": {
+              "location": "task2steps.i_check_that_fields_are_empty()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131757600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I click cancel",
+            "match": {
+              "location": "task2steps.i_click_cancel()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 35,
+            "name": "@clear"
           }
         ]
       }
     ],
-    "name": "I google stuff",
+    "name": "I test numbers",
     "description": "",
-    "id": "i-google-stuff",
+    "id": "i-test-numbers",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/activity.feature"
+    "uri": "src/test/resources/features/Task2.feature"
   }
 ]

@@ -1,12 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.293178">
-<testcase classname="I google stuff" name="As and end user I can search cats using google" time="31.293178">
-<system-out><![CDATA[Given I am on googling page.................................................passed
-And I enter search phrase: "cat"............................................passed
-And I click search..........................................................passed
-Then I confirm i searched for: "cat"........................................passed
-And I look at cats for 10 seconds...........................................passed
-And I go back...............................................................passed
-Then I confirm im in google.................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="95.246151">
+<testcase classname="I test numbers" name="I add a new person and reset list" time="24.033979">
+<system-out><![CDATA[Given I am on People with jobs page.........................................passed
+When I press add person button..............................................passed
+And I enter the name: "john"................................................passed
+And I enter job: "janitor"..................................................passed
+Then I press add............................................................passed
+And I check that person is added: "john" "janitor"..........................passed
+Then I reset list...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I test numbers" name="I add a new person and reset list 2" time="20.304723">
+<system-out><![CDATA[Given I am on People with jobs page.........................................passed
+When I press add person button..............................................passed
+And I enter the name: "jane"................................................passed
+And I enter job: "cleaner"..................................................passed
+Then I press add............................................................passed
+And I check that person is added: "jane" "cleaner"..........................passed
+Then I reset list...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I test numbers" name="I edit person" time="16.400553">
+<system-out><![CDATA[Given I am on People with jobs page.........................................passed
+When I press edit button....................................................passed
+And I edit name: "NewName"..................................................passed
+And I edit job: "NewJob"....................................................passed
+Then I press edit...........................................................passed
+And I check that person is edited: "NewName" "NewJob".......................passed
+Then I reset list...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I test numbers" name="I remove person" time="16.329469">
+<system-out><![CDATA[Given I am on People with jobs page.........................................passed
+When I press remove person..................................................passed
+And I check that person is removed..........................................passed
+Then I reset list...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I test numbers" name="I check Clear all fields button" time="18.177427">
+<system-out><![CDATA[Given I am on People with jobs page.........................................passed
+When I press add person button..............................................passed
+And I enter the name: "John"................................................passed
+And I enter job: "Janitor"..................................................passed
+Then I click clear all fields...............................................passed
+And I check that fields are empty...........................................passed
+Then I click cancel.........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
