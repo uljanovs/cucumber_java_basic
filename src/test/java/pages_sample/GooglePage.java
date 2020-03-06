@@ -25,17 +25,17 @@ public class GooglePage {
         SearchField.clear();
     }
 
-    public void enterCat() {
-        SearchField.clear();
-        SearchField.sendKeys("cat");
-    }
-
     public void clickSearchButton() {
         SearchButton.click();
     }
 
-    public void checkResult() {
-        assertTrue(SearchField.getAttribute("value").equals("cat"));
+
+    public void checkResult(String result) {
+        assertTrue(SearchField.getAttribute("value").equals(result));
     }
 
+    public void enterCat(String searchvalue) {
+        SearchField.clear();
+        SearchField.sendKeys(searchvalue);
+    }
 }

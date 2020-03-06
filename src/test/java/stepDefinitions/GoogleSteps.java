@@ -34,20 +34,27 @@ public class GoogleSteps {
     }
     @When("^I Click on Search Field$")
     public void iClickSearchField() {
-        gPage.clickSearchField();
+       // gPage.clickSearchField();
+        WebElement SearchField = driver.findElement(By.name("q"));
+        SearchField.click();
     }
-    @When("^I Enter Cat$")
-    public void iEnterCat() {
-        gPage.clearSearch();
-        gPage.enterCat();
+    @When("^I Enter: \"([^\"]*)\"$")
+    public void iEnterValue(String searchvalue) throws Throwable {
+        WebElement SearchField = driver.findElement(By.name("q"));
+        SearchField.clear();
+        SearchField.sendKeys(searchvalue);
     }
     @When("^I Click on Search Button$")
     public void iClickSearchButton() {
-    gPage.clickSearchButton();
+        WebElement SearchButton = driver.findElement(By.name("btnK"));
+        SearchButton.submit();
+//    gPage.clickSearchButton();
     }
-    @Then("^I see Cats$")
-        public void iSeeResult() {
-            gPage.checkResult();
+    @Then("^I see: \"([^\"]*)\"$")
+        public void iSeeResult(String result) throws Throwable {
+        //    gPage.checkResult();
+        assertEquals(result, driver.findElement(By.name("q")).getAttribute("value"));
+
     }
 
 }
