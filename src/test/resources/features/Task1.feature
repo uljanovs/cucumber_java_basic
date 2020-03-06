@@ -15,7 +15,7 @@ Feature: Task1
       | 150   | Number is too big     |
       | text  | Please enter a number |
 
-
+  @working
   Scenario:
     Given I am on Enter a number page
     When I enter a value: "81"
