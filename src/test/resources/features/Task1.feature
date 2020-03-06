@@ -21,4 +21,4 @@ Feature: As a user I need to calculate some values
   Scenario: As a user I enter correct value
         When I input correct value 100
         And I press search button again
-        And I see alert message with text
+        And I see alert message wit h text
