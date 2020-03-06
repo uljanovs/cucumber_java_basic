@@ -1,1 +1,152 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15453501200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "As and end user I can search cats using google",
+        "description": "",
+        "id": "i-google-stuff;as-and-end-user-i-can-search-cats-using-google",
+        "after": [
+          {
+            "result": {
+              "duration": 1175014700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2122749300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on googling page",
+            "match": {
+              "location": "GoogleSteps.i_am_on_googling_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 218627900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter search phrase: \"cat\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cat",
+                  "offset": 24
+                }
+              ],
+              "location": "GoogleSteps.i_enter_search_phrase(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1997331500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click search",
+            "match": {
+              "location": "GoogleSteps.i_click_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29034200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I confirm i searched for: \"cat\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cat",
+                  "offset": 27
+                }
+              ],
+              "location": "GoogleSteps.i_confirm_i_searched_for(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10000360800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I look at cats for 10 seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 19
+                }
+              ],
+              "location": "GoogleSteps.i_look_at_cats_for_seconds(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261292500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I go back",
+            "match": {
+              "location": "GoogleSteps.i_go_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35266300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I confirm im in google",
+            "match": {
+              "location": "GoogleSteps.i_confirm_im_in_google()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@cat"
+          }
+        ]
+      }
+    ],
+    "name": "I google stuff",
+    "description": "",
+    "id": "i-google-stuff",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/activity.feature"
+  }
+]

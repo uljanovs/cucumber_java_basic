@@ -36,7 +36,8 @@ public class GoogleSteps {
     public void i_click_search() throws Throwable {
         //driver.findElement(By.name("btnK")).click();
         WebElement button123=driver.findElement(By.name("btnK"));
-        button123.click();
+        button123.submit();
+        Thread.sleep(2000);
     }
     @Then("^I confirm i searched for: \"([^\"]*)\"$")
     public void i_confirm_i_searched_for(String arg1) throws Throwable {
@@ -44,7 +45,7 @@ public class GoogleSteps {
 
     }
 
-    @Then("^I look at cats for (\\d+) seconds$")
+    @Then("^I look at cats for (\\\\d+) seconds$")
     public void i_look_at_cats_for_seconds(int arg1) throws Throwable {
         Thread.sleep(10000);
     }
