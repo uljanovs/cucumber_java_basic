@@ -1,1 +1,422 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 958684000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on calculator page",
+            "match": {
+              "location": "Task_1Steps.iAmOnCalculatorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14230567300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "check error cases",
+        "description": "",
+        "id": "as-a-user-i-want-to-use-calculator;check-error-cases;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 952902000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 130142600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter value: \"25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 16
+                }
+              ],
+              "location": "Task_1Steps.iEnterValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 254685100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click submit",
+            "match": {
+              "location": "Task_1Steps.iClickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55864700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see error message: \"Number is too small\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Number is too small",
+                  "offset": 22
+                }
+              ],
+              "location": "Task_1Steps.iSeeMessage(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 818476100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on calculator page",
+            "match": {
+              "location": "Task_1Steps.iAmOnCalculatorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14160542600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "check error cases",
+        "description": "",
+        "id": "as-a-user-i-want-to-use-calculator;check-error-cases;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 868423500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 147262200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter value: \"150\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "150",
+                  "offset": 16
+                }
+              ],
+              "location": "Task_1Steps.iEnterValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111018900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click submit",
+            "match": {
+              "location": "Task_1Steps.iClickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134170400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see error message: \"Number is too big\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Number is too big",
+                  "offset": 22
+                }
+              ],
+              "location": "Task_1Steps.iSeeMessage(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 749585300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on calculator page",
+            "match": {
+              "location": "Task_1Steps.iAmOnCalculatorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13024886800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "check error cases",
+        "description": "",
+        "id": "as-a-user-i-want-to-use-calculator;check-error-cases;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 822222800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 153655700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter value: \"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 16
+                }
+              ],
+              "location": "Task_1Steps.iEnterValue(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107450900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click submit",
+            "match": {
+              "location": "Task_1Steps.iClickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71754800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see error message: \"Please enter a number\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter a number",
+                  "offset": 22
+                }
+              ],
+              "location": "Task_1Steps.iSeeMessage(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 844528100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on calculator page",
+            "match": {
+              "location": "Task_1Steps.iAmOnCalculatorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13118956800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "check with correct number",
+        "description": "",
+        "id": "as-a-user-i-want-to-use-calculator;check-with-correct-number",
+        "after": [
+          {
+            "result": {
+              "duration": 902366400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 159310700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter numbers",
+            "match": {
+              "location": "Task_1Steps.iEnterNumbers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140778900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click submit",
+            "match": {
+              "location": "Task_1Steps.iClickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106969600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "message with correct answer is displayed",
+            "match": {
+              "location": "Task_1Steps.messageWithCorrectAnswerIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user I want to use calculator",
+    "description": "",
+    "id": "as-a-user-i-want-to-use-calculator",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Task1.feature"
+  }
+]

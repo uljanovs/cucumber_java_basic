@@ -1,5 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0">
-<testcase classname="dummy" name="dummy">
-<skipped message="No features found"/>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="63.025207">
+<testcase classname="As a user I want to use calculator" name="check error cases" time="16.582846">
+<system-out><![CDATA[Given I am on calculator page...............................................passed
+When I enter value: "25"....................................................passed
+And I click submit..........................................................passed
+Then I see error message: "Number is too small".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use calculator" name="check error cases 2" time="16.239894">
+<system-out><![CDATA[Given I am on calculator page...............................................passed
+When I enter value: "150"...................................................passed
+And I click submit..........................................................passed
+Then I see error message: "Number is too big"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use calculator" name="check error cases 3" time="14.929556">
+<system-out><![CDATA[Given I am on calculator page...............................................passed
+When I enter value: "abc"...................................................passed
+And I click submit..........................................................passed
+Then I see error message: "Please enter a number"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user I want to use calculator" name="check with correct number" time="15.272911">
+<system-out><![CDATA[Given I am on calculator page...............................................passed
+When I enter numbers........................................................passed
+And I click submit..........................................................passed
+Then message with correct answer is displayed...............................passed
+]]></system-out>
 </testcase>
 </testsuite>
