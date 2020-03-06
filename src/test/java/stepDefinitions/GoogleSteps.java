@@ -22,6 +22,27 @@ public class GoogleSteps {
 
     @Given("^I am on Google page$")
     public void iAmOnActionPage() {
-        driver.get("https://uljanovs.github.io/site/examples/actions");
+        driver.get("https://www.google.lv/");
+    }
+    @When("^I enter search criteria: \"([^\"]*)\"$")
+    public void iEnterSearchCriteria(String name) throws Throwable {
+        driver.findElement(By.name("q")).clear();
+        driver.findElement(By.name("q")).sendKeys(name);
+    }
+    @When("^I enter: \"([^\"]*)\" in search field$")
+    public void iEnterName(String animal) throws Throwable {
+        driver.findElement(By.name("q")).clear();
+        driver.findElement(By.name("q")).sendKeys(animal);
+    }
+    @And("^I search$")
+    public void iClickGoogleSearch() throws Throwable {
+        //driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div[1]/div[3]/center/input[1]")).click();
+        //driver.findElement(By.linkText("Google Search")).click();
+        driver.findElement(By.name("q")).submit();
+    }
+
+    @Then("^I see results$")
+    public void iSeeResultIsNotEmpty() throws Throwable {
+        assertTrue(driver.findElement(By.id("result-stats")).isDisplayed());
     }
 }

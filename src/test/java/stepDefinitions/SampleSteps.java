@@ -46,12 +46,6 @@ public class SampleSteps {
         driver.get("https://uljanovs.github.io/site/examples/age");
     }
 
-    @When("^I enter name: \"([^\"]*)\"$")
-    public void iEnterName(String name) throws Throwable {
-        driver.findElement(By.id("name")).clear();
-        driver.findElement(By.id("name")).sendKeys(name);
-    }
-
     @And("^I enter age: (\\d+)$")
     public void iEnterAge(int age) throws Throwable {
         driver.findElement(By.id("age")).sendKeys(String.valueOf(age));

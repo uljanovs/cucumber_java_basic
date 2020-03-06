@@ -3,16 +3,15 @@ package stepDefinitions;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 
 public class Hooks {
     public static WebDriver driver;
+    private static WebDriverWait wait;
     static String libWithDriversLocation = System.getProperty("user.dir") + "\\lib\\";
 
     @Before
@@ -20,6 +19,7 @@ public class Hooks {
         System.setProperty("webdriver.chrome.driver", libWithDriversLocation + "chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
+        wait = (WebDriverWait) new WebDriverWait(driver, 10).ignoring(StaleElementReferenceException.class);
     }
 
     @After

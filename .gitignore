@@ -1,7 +1,11 @@
 .idea/
-out/
-target/
 cucumber-report/
 phantomjsdriver.log
 *.jpg
 cucumber_project.iml
+# Build directories
+distrib/
+target/
+tmp/
+gen-external-apklibs/
+out/

@@ -3,10 +3,31 @@
     "line": 1,
     "elements": [
       {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1309207700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on Google page",
+            "match": {
+              "location": "GoogleSteps.iAmOnActionPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
         "before": [
           {
             "result": {
-              "duration": 9630715100,
+              "duration": 9734494300,
               "status": "passed"
             },
             "match": {
@@ -14,14 +35,14 @@
             }
           }
         ],
-        "line": 11,
-        "name": "Simple scenario 2",
+        "line": 18,
+        "name": "As an end user I can search my favorite animals using the google",
         "description": "",
-        "id": "introduction-to-cucumber-part-1;simple-scenario-2",
+        "id": "as-an-end-user-i-need-a-google-search-feature-for-all-animals-i-like;as-an-end-user-i-can-search-my-favorite-animals-using-the-google;;2",
         "after": [
           {
             "result": {
-              "duration": 691125400,
+              "duration": 707936600,
               "status": "passed"
             },
             "match": {
@@ -30,40 +51,158 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 96892800,
+              "status": "passed"
             },
-            "comments": [
-              {
-                "line": 12,
-                "value": "#Given Hi MAN!"
-              },
-              {
-                "line": 13,
-                "value": "# And I should see home page description like my wife"
-              }
+            "line": 7,
+            "name": "I enter: \"frog\" in search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "frog",
+                  "offset": 10
+                }
+              ],
+              "location": "GoogleSteps.iEnterName(String)"
+            },
+            "matchedColumns": [
+              0
             ],
-            "line": 14,
-            "name": "I should see Tamilla and Infvars",
-            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1724407500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search",
+            "match": {
+              "location": "GoogleSteps.iClickGoogleSearch()"
+            },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26978600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see results",
+            "match": {
+              "location": "GoogleSteps.iSeeResultIsNotEmpty()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1227118300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on Google page",
+            "match": {
+              "location": "GoogleSteps.iAmOnActionPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9191221800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
           }
         ],
-        "tags": [
+        "line": 19,
+        "name": "As an end user I can search my favorite animals using the google",
+        "description": "",
+        "id": "as-an-end-user-i-need-a-google-search-feature-for-all-animals-i-like;as-an-end-user-i-can-search-my-favorite-animals-using-the-google;;3",
+        "after": [
           {
-            "line": 10,
-            "name": "@smoke"
+            "result": {
+              "duration": 693228100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 92978600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter: \"pig\" in search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pig",
+                  "offset": 10
+                }
+              ],
+              "location": "GoogleSteps.iEnterName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1619200400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search",
+            "match": {
+              "location": "GoogleSteps.iClickGoogleSearch()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22139300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see results",
+            "match": {
+              "location": "GoogleSteps.iSeeResultIsNotEmpty()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Introduction to cucumber part 1",
-    "description": "As a test engineer\r\nI want to be able to write and execute a simple scenario",
-    "id": "introduction-to-cucumber-part-1",
+    "name": "As an end user I need a Google search feature for all Animals I like",
+    "description": "",
+    "id": "as-an-end-user-i-need-a-google-search-feature-for-all-animals-i-like",
     "keyword": "Feature",
-    "uri": "Sample1.feature"
+    "uri": "Activity_2.feature"
   }
 ]
