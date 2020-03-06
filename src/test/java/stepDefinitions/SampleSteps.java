@@ -67,10 +67,10 @@ public class SampleSteps {
         driver.findElement(By.id("submit")).click();
     }
 
-    @Then("^I see message: \"([^\"]*)\"$")
-    public void iSeeMessage(String message) throws Throwable {
-        assertEquals(message, driver.findElement(By.id("message")).getText());
-    }
+   // @Then("^I see message: \"([^\"]*)\"$")
+   // public void iSeeMessage(String message) throws Throwable {
+     //   assertEquals(message, driver.findElement(By.id("message")).getText());
+    //}
 
     @When("^I enter values:$")
     public void iEnterValues(Map<String, String> valuesToEnter) throws Throwable {
