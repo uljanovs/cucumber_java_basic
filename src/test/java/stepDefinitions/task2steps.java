@@ -25,7 +25,7 @@ public class task2steps {
 
     @When("^I press add person button$")
     public void i_press_add_person_button() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[.='Add person'][1]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[.='Add person'][1]"));
         button123.click();
     }
 
@@ -43,7 +43,7 @@ public class task2steps {
 
     @Then("^I press add$")
     public void i_press_add() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[@id=\"modal_button\"][1]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[@id=\"modal_button\"][1]"));
         button123.click();
     }
 
@@ -54,18 +54,18 @@ public class task2steps {
     }
 
     //*[@id="person3"]/span[3]
-        //*[@id="person3"]/span[4]
+    //*[@id="person3"]/span[4]
 
 
     @Then("^I reset list$")
     public void i_reset_list() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[.='Reset List'][1]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[.='Reset List'][1]"));
         button123.click();
     }
 
     @When("^I press edit button$")
     public void i_press_edit_button() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[@id=\"person0\"]/span[2]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[@id=\"person0\"]/span[2]"));
         button123.click();
     }
 
@@ -83,7 +83,7 @@ public class task2steps {
 
     @Then("^I press edit$")
     public void i_press_edit() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[@id=\"modal_button\"][1]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[@id=\"modal_button\"][1]"));
         button123.click();
     }
 
@@ -95,18 +95,18 @@ public class task2steps {
 
     @When("^I press remove person$")
     public void i_press_remove_person() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[@id=\"person0\"]/span[1]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[@id=\"person0\"]/span[1]"));
         button123.click();
     }
 
     @When("^I check that person is removed$")
     public void i_check_that_person_is_removed() throws Throwable {
-        assertEquals(0,driver.findElements(By.xpath("//*[@id=\"person0\"]/span[3]")).size());
+        assertEquals(0, driver.findElements(By.xpath("//*[@id=\"person0\"]/span[3]")).size());
     }
 
     @Then("^I click clear all fields$")
     public void i_click_clear_all_fields() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[@id=\"addPersonBtn\"]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[@id=\"addPersonBtn\"]"));
         button123.click();
     }
 
@@ -118,7 +118,7 @@ public class task2steps {
 
     @Then("^I click cancel$")
     public void i_click_cancel() throws Throwable {
-        WebElement button123=driver.findElement(By.xpath("//*[@id=\"modal_button\"][2]"));
+        WebElement button123 = driver.findElement(By.xpath("//*[@id=\"modal_button\"][2]"));
         button123.click();
     }
 

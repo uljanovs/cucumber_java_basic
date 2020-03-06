@@ -36,15 +36,16 @@ public class task1steps {
 
     @When("^I click submit$")
     public void i_click_submit() throws Throwable {
-        WebElement button123=driver.findElement(By.cssSelector("body > div.w3-row > div > div > div.w3-container.w3-card-4 > button"));
+        WebElement button123 = driver.findElement(By.cssSelector("body > div.w3-row > div > div > div.w3-container.w3-card-4 > button"));
         button123.click();
     }
 
     @Then("^I confirm error message \"([^\"]*)\"$")
     public void i_confirm_error_message(String arg1) throws Throwable {
-        assertEquals(arg1,driver.findElement(By.id("ch1_error")).getText());
+        assertEquals(arg1, driver.findElement(By.id("ch1_error")).getText());
 
     }
+
     @Then("^I confirm correct alert$")
     public void i_confirm_correct_alert() throws Throwable {
         Alert alert = driver.switchTo().alert();
