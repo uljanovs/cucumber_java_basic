@@ -10,7 +10,7 @@ Feature: Testing "Enter the number" Web Application
     Then I see an "<error>"
     Examples:
     |input|error                |
-    |49   |Number is too small  |
+    |48   |Number is too small  |
     |101  |Number is too big    |
     |Text |Please enter a number|
 

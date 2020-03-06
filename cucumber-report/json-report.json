@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 2076441000,
+              "duration": 1072150500,
               "status": "passed"
             },
             "line": 5,
-            "name": "I am on google page",
+            "name": "I am on the List page",
             "match": {
-              "location": "ActivitySteps.i_am_on_google_page()"
+              "location": "Task2StepDef.iAmOnTheListPage()"
             },
             "keyword": "Given "
           }
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 16072566200,
+              "duration": 15897842600,
               "status": "passed"
             },
             "match": {
@@ -35,14 +35,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "As an end user I can search animolz using Google",
+        "line": 17,
+        "name": "I add person to the list",
         "description": "",
-        "id": "tests-for-performing-search;as-an-end-user-i-can-search-animolz-using-google;;2",
+        "id": "testing-\"list-of-people\"-page;i-add-person-to-the-list;;2",
         "after": [
           {
             "result": {
-              "duration": 841293000,
+              "duration": 892064200,
               "status": "passed"
             },
             "match": {
@@ -55,51 +55,121 @@
         "steps": [
           {
             "result": {
-              "duration": 422299700,
+              "duration": 754554100,
               "status": "passed"
             },
             "line": 8,
-            "name": "I enter \"cute\" \"cat\" to the search field",
+            "name": "I press add button",
             "match": {
-              "arguments": [
-                {
-                  "val": "cute",
-                  "offset": 9
-                },
-                {
-                  "val": "cat",
-                  "offset": 16
-                }
-              ],
-              "location": "ActivitySteps.iEnterToTheSearchField(String,String)"
+              "location": "Task2StepDef.iPressAddButton()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1674943700,
+              "duration": 150833400,
               "status": "passed"
             },
             "line": 9,
-            "name": "I press Search button",
+            "name": "I add \"Jenny\"",
             "match": {
-              "location": "ActivitySteps.i_press_Search_button()"
+              "arguments": [
+                {
+                  "val": "Jenny",
+                  "offset": 7
+                }
+              ],
+              "location": "Task2StepDef.iAdd(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147190700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "add \"nurse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nurse",
+                  "offset": 5
+                }
+              ],
+              "location": "Task2StepDef.add(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155416900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I confirm addition",
+            "match": {
+              "location": "Task2StepDef.iConfirmAddition()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 37747400,
+              "duration": 115696700,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I should see search results",
+            "line": 12,
+            "name": "I check that \"Jenny\" is correct",
             "match": {
-              "location": "ActivitySteps.i_should_see_search_results()"
+              "arguments": [
+                {
+                  "val": "Jenny",
+                  "offset": 14
+                }
+              ],
+              "location": "Task2StepDef.iCheckThatIsCorrect(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65275500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I check \"nurse\" is correct",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nurse",
+                  "offset": 9
+                }
+              ],
+              "location": "Task2StepDef.iCheckIsCorrect(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158700300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I reset list",
+            "match": {
+              "location": "Task2StepDef.iResetList()"
             },
             "keyword": "Then "
           }
@@ -114,13 +184,13 @@
         "steps": [
           {
             "result": {
-              "duration": 1797167800,
+              "duration": 1096010800,
               "status": "passed"
             },
             "line": 5,
-            "name": "I am on google page",
+            "name": "I am on the List page",
             "match": {
-              "location": "ActivitySteps.i_am_on_google_page()"
+              "location": "Task2StepDef.iAmOnTheListPage()"
             },
             "keyword": "Given "
           }
@@ -130,7 +200,7 @@
         "before": [
           {
             "result": {
-              "duration": 13772952200,
+              "duration": 15678838100,
               "status": "passed"
             },
             "match": {
@@ -138,14 +208,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "As an end user I can search animolz using Google",
+        "line": 18,
+        "name": "I add person to the list",
         "description": "",
-        "id": "tests-for-performing-search;as-an-end-user-i-can-search-animolz-using-google;;3",
+        "id": "testing-\"list-of-people\"-page;i-add-person-to-the-list;;3",
         "after": [
           {
             "result": {
-              "duration": 1109023600,
+              "duration": 1031632500,
               "status": "passed"
             },
             "match": {
@@ -158,51 +228,121 @@
         "steps": [
           {
             "result": {
-              "duration": 591680600,
+              "duration": 343144500,
               "status": "passed"
             },
             "line": 8,
-            "name": "I enter \"good\" \"rat\" to the search field",
+            "name": "I press add button",
             "match": {
-              "arguments": [
-                {
-                  "val": "good",
-                  "offset": 9
-                },
-                {
-                  "val": "rat",
-                  "offset": 16
-                }
-              ],
-              "location": "ActivitySteps.iEnterToTheSearchField(String,String)"
+              "location": "Task2StepDef.iPressAddButton()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2419936200,
+              "duration": 155923700,
               "status": "passed"
             },
             "line": 9,
-            "name": "I press Search button",
+            "name": "I add \"Mike\"",
             "match": {
-              "location": "ActivitySteps.i_press_Search_button()"
+              "arguments": [
+                {
+                  "val": "Mike",
+                  "offset": 7
+                }
+              ],
+              "location": "Task2StepDef.iAdd(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 223461800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "add \"doctor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "doctor",
+                  "offset": 5
+                }
+              ],
+              "location": "Task2StepDef.add(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 422639100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I confirm addition",
+            "match": {
+              "location": "Task2StepDef.iConfirmAddition()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 44473800,
+              "duration": 213209500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I should see search results",
+            "line": 12,
+            "name": "I check that \"Mike\" is correct",
             "match": {
-              "location": "ActivitySteps.i_should_see_search_results()"
+              "arguments": [
+                {
+                  "val": "Mike",
+                  "offset": 14
+                }
+              ],
+              "location": "Task2StepDef.iCheckThatIsCorrect(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109307100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I check \"doctor\" is correct",
+            "match": {
+              "arguments": [
+                {
+                  "val": "doctor",
+                  "offset": 9
+                }
+              ],
+              "location": "Task2StepDef.iCheckIsCorrect(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208005300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I reset list",
+            "match": {
+              "location": "Task2StepDef.iResetList()"
             },
             "keyword": "Then "
           }
@@ -217,13 +357,13 @@
         "steps": [
           {
             "result": {
-              "duration": 1554665600,
+              "duration": 878176900,
               "status": "passed"
             },
             "line": 5,
-            "name": "I am on google page",
+            "name": "I am on the List page",
             "match": {
-              "location": "ActivitySteps.i_am_on_google_page()"
+              "location": "Task2StepDef.iAmOnTheListPage()"
             },
             "keyword": "Given "
           }
@@ -233,7 +373,7 @@
         "before": [
           {
             "result": {
-              "duration": 14123726000,
+              "duration": 14734342800,
               "status": "passed"
             },
             "match": {
@@ -241,14 +381,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "As an end user I can search animolz using Google",
+        "line": 28,
+        "name": "I edit a person in a list",
         "description": "",
-        "id": "tests-for-performing-search;as-an-end-user-i-can-search-animolz-using-google;;4",
+        "id": "testing-\"list-of-people\"-page;i-edit-a-person-in-a-list;;2",
         "after": [
           {
             "result": {
-              "duration": 964133500,
+              "duration": 959402500,
               "status": "passed"
             },
             "match": {
@@ -261,61 +401,188 @@
         "steps": [
           {
             "result": {
-              "duration": 589453500,
+              "duration": 365336700,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I enter \"gorgeous\" \"wombat\" to the search field",
+            "line": 21,
+            "name": "I press edit button",
+            "match": {
+              "location": "Task2StepDef.iPressEditButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 438889200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I edit \"Liza\" and \"janitor\"",
             "match": {
               "arguments": [
                 {
-                  "val": "gorgeous",
+                  "val": "Liza",
+                  "offset": 8
+                },
+                {
+                  "val": "janitor",
+                  "offset": 19
+                }
+              ],
+              "location": "Task2StepDef.iEditAnd(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 348713100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I confirm editing",
+            "match": {
+              "location": "Task2StepDef.iConfirmEditing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146846100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I check \"Liza\" and \"janitor\" edited correctly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Liza",
                   "offset": 9
                 },
                 {
-                  "val": "wombat",
+                  "val": "janitor",
                   "offset": 20
                 }
               ],
-              "location": "ActivitySteps.iEnterToTheSearchField(String,String)"
+              "location": "Task2StepDef.iCheckAndEditedCorrectly(String,String)"
             },
             "matchedColumns": [
               0,
               1
             ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 186179400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I reset list",
+            "match": {
+              "location": "Task2StepDef.iResetList()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 957504200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the List page",
+            "match": {
+              "location": "Task2StepDef.iAmOnTheListPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14710298500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "I remove a person from list",
+        "description": "",
+        "id": "testing-\"list-of-people\"-page;i-remove-a-person-from-list",
+        "after": [
+          {
+            "result": {
+              "duration": 887477500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 237040100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I press Delete button",
+            "match": {
+              "location": "Task2StepDef.iPressDeleteButton()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2062342600,
+              "duration": 66578200,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I press Search button",
+            "line": 32,
+            "name": "I check that person removed",
             "match": {
-              "location": "ActivitySteps.i_press_Search_button()"
+              "location": "Task2StepDef.iCheckThatPersonRemoved()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 33479900,
+              "duration": 191017700,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I should see search results",
+            "line": 33,
+            "name": "I reset list",
             "match": {
-              "location": "ActivitySteps.i_should_see_search_results()"
+              "location": "Task2StepDef.iResetList()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "tests for performing search",
-    "description": "As an end user I need to use a Google search",
-    "id": "tests-for-performing-search",
+    "name": "Testing \"List of people\" page",
+    "description": "As an end user I need to be able to edit list  of people",
+    "id": "testing-\"list-of-people\"-page",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/Activity.feature"
+    "uri": "src/test/resources/features/Task2.feature"
   }
 ]

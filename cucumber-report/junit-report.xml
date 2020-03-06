@@ -1,23 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="60.188326">
-<testcase classname="tests for performing search" name="As an end user I can search animolz using Google" time="21.125291">
-<system-out><![CDATA[Given I am on google page...................................................passed
-When I enter "cute" "cat" to the search field...............................passed
-And I press Search button...................................................passed
-Then I should see search results............................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="73.9997">
+<testcase classname="Testing &quot;List of people&quot; page" name="I add person to the list" time="19.409725">
+<system-out><![CDATA[Given I am on the List page.................................................passed
+When I press add button.....................................................passed
+And I add "Jenny"...........................................................passed
+And add "nurse".............................................................passed
+And I confirm addition......................................................passed
+And I check that "Jenny" is correct.........................................passed
+And I check "nurse" is correct..............................................passed
+Then I reset list...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="tests for performing search" name="As an end user I can search animolz using Google 2" time="19.735234">
-<system-out><![CDATA[Given I am on google page...................................................passed
-When I enter "good" "rat" to the search field...............................passed
-And I press Search button...................................................passed
-Then I should see search results............................................passed
+<testcase classname="Testing &quot;List of people&quot; page" name="I add person to the list 2" time="19.482172">
+<system-out><![CDATA[Given I am on the List page.................................................passed
+When I press add button.....................................................passed
+And I add "Mike"............................................................passed
+And add "doctor"............................................................passed
+And I confirm addition......................................................passed
+And I check that "Mike" is correct..........................................passed
+And I check "doctor" is correct.............................................passed
+Then I reset list...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="tests for performing search" name="As an end user I can search animolz using Google 3" time="19.327801">
-<system-out><![CDATA[Given I am on google page...................................................passed
-When I enter "gorgeous" "wombat" to the search field........................passed
-And I press Search button...................................................passed
-Then I should see search results............................................passed
+<testcase classname="Testing &quot;List of people&quot; page" name="I edit a person in a list" time="18.057887">
+<system-out><![CDATA[Given I am on the List page.................................................passed
+When I press edit button....................................................passed
+And I edit "Liza" and "janitor".............................................passed
+And I confirm editing.......................................................passed
+And I check "Liza" and "janitor" edited correctly...........................passed
+Then I reset list...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Testing &quot;List of people&quot; page" name="I remove a person from list" time="17.049916">
+<system-out><![CDATA[Given I am on the List page.................................................passed
+When I press Delete button..................................................passed
+And I check that person removed.............................................passed
+Then I reset list...........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

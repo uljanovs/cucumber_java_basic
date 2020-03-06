@@ -42,16 +42,9 @@ public class Task1StepDef {
 
 
     @Then("^I see an \"([^\"]*)\"$")
-    public void iSeeAn(String error) throws Throwable {
-        if (error == "Number is too small"){
-            Assert.assertEquals("Number is too small", error);
-        }
-        else if (error == "Number is too big"){
-            Assert.assertEquals("Number is too big", error);
-        }
-        else if (error == "Please enter a number"){
-            Assert.assertEquals("Please enter a number", error);
-        }
+    public void iSeeAn(String err) throws Throwable {
+
+        Assert.assertEquals(err, driver.findElement(By.id("ch1_error")).getText());
     }
 
     @Then("^I see an alert$")

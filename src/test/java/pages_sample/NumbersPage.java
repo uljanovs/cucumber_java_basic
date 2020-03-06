@@ -11,6 +11,8 @@ public class NumbersPage {
     private WebElement inputField;
     @FindBy(how = How.CLASS_NAME, using = "w3-btn")
     private WebElement submitButton;
+    @FindBy(how = How.ID, using = "ch1_error")
+    private WebElement errorMessage;
 
     public WebElement enterValue() {
         inputField.clear();
@@ -20,4 +22,6 @@ public class NumbersPage {
     public void submit (){
         submitButton.click();
     }
+
+
 }
