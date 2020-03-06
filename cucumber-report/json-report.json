@@ -3,10 +3,31 @@
     "line": 1,
     "elements": [
       {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2076441000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on google page",
+            "match": {
+              "location": "ActivitySteps.i_am_on_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
         "before": [
           {
             "result": {
-              "duration": 16057686700,
+              "duration": 16072566200,
               "status": "passed"
             },
             "match": {
@@ -14,14 +35,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "As an end user I can search cats using Google",
+        "line": 14,
+        "name": "As an end user I can search animolz using Google",
         "description": "",
-        "id": "tests-for-performing-search;as-an-end-user-i-can-search-cats-using-google",
+        "id": "tests-for-performing-search;as-an-end-user-i-can-search-animolz-using-google;;2",
         "after": [
           {
             "result": {
-              "duration": 1244265400,
+              "duration": 841293000,
               "status": "passed"
             },
             "match": {
@@ -30,38 +51,40 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2125590000,
+              "duration": 422299700,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I am on google page",
+            "line": 8,
+            "name": "I enter \"cute\" \"cat\" to the search field",
             "match": {
-              "location": "ActivitySteps.i_am_on_google_page()"
+              "arguments": [
+                {
+                  "val": "cute",
+                  "offset": 9
+                },
+                {
+                  "val": "cat",
+                  "offset": 16
+                }
+              ],
+              "location": "ActivitySteps.iEnterToTheSearchField(String,String)"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 297458400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I enter cute cats to the search field",
-            "match": {
-              "location": "ActivitySteps.i_enter_cute_cats_to_the_search_field()"
-            },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2083791400,
+              "duration": 1674943700,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I press Search button",
             "match": {
               "location": "ActivitySteps.i_press_Search_button()"
@@ -70,21 +93,221 @@
           },
           {
             "result": {
-              "duration": 50817100,
+              "duration": 37747400,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "I should see search results",
             "match": {
               "location": "ActivitySteps.i_should_see_search_results()"
             },
             "keyword": "Then "
           }
-        ],
-        "tags": [
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
           {
-            "line": 4,
-            "name": "@cat"
+            "result": {
+              "duration": 1797167800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on google page",
+            "match": {
+              "location": "ActivitySteps.i_am_on_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13772952200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "As an end user I can search animolz using Google",
+        "description": "",
+        "id": "tests-for-performing-search;as-an-end-user-i-can-search-animolz-using-google;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1109023600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 591680600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter \"good\" \"rat\" to the search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "good",
+                  "offset": 9
+                },
+                {
+                  "val": "rat",
+                  "offset": 16
+                }
+              ],
+              "location": "ActivitySteps.iEnterToTheSearchField(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2419936200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I press Search button",
+            "match": {
+              "location": "ActivitySteps.i_press_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44473800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see search results",
+            "match": {
+              "location": "ActivitySteps.i_should_see_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1554665600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on google page",
+            "match": {
+              "location": "ActivitySteps.i_am_on_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14123726000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "As an end user I can search animolz using Google",
+        "description": "",
+        "id": "tests-for-performing-search;as-an-end-user-i-can-search-animolz-using-google;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 964133500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 589453500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter \"gorgeous\" \"wombat\" to the search field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gorgeous",
+                  "offset": 9
+                },
+                {
+                  "val": "wombat",
+                  "offset": 20
+                }
+              ],
+              "location": "ActivitySteps.iEnterToTheSearchField(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2062342600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I press Search button",
+            "match": {
+              "location": "ActivitySteps.i_press_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33479900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see search results",
+            "match": {
+              "location": "ActivitySteps.i_should_see_search_results()"
+            },
+            "keyword": "Then "
           }
         ]
       }

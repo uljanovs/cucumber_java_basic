@@ -9,7 +9,7 @@ public class GooglePage {
     private WebElement searchField;
     //@FindBy (how = How.NAME, using = "btnK")
     //private WebElement buttonSearch;
-    @FindBy(how = How.XPATH, using = "//*[@id=\"rso\"]/div[1]/div/g-section-with-header/div[1]/h3/a")
+    @FindBy(how = How.ID, using = "result-stats")
     private WebElement searchResult;
 
     public void enterSearch (String input){
@@ -17,7 +17,7 @@ public class GooglePage {
     }
 
 
-    public String verifySearchResult(){
-        return searchResult.getText();
+    public boolean verifySearchResult(){
+        return searchResult.isDisplayed();
     }
 }

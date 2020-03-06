@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import pages_sample.GooglePage;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class ActivitySteps {
 
@@ -29,23 +30,25 @@ public class ActivitySteps {
 
     }
 
-    @When("^I enter cute cats to the search field$")
-    public void i_enter_cute_cats_to_the_search_field() throws Throwable {
+    @When("^I enter \"([^\"]*)\" \"([^\"]*)\" to the search field$")
+    public void iEnterToTheSearchField (String characteristic, String animalz) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-            googlePage.enterSearch("cute cats");
+            googlePage.enterSearch(characteristic + " " + animalz);
     }
 
     @When("^I press Search button$")
     public void i_press_Search_button() throws Throwable {
         WebElement SearchButton = driver.findElement(By.name("btnK"));
-        SearchButton.click();
+        SearchButton.submit();
     }
 
     @Then("^I should see search results$")
     public void i_should_see_search_results() throws Throwable {
-        assertEquals("Attēli vaicājumam cute cats", googlePage.verifySearchResult());
+        assertTrue(googlePage.verifySearchResult());
 
     }
 
 
-}
+
+    }
+

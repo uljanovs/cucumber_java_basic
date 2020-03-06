@@ -1,7 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.859609">
-<testcase classname="tests for performing search" name="As an end user I can search cats using Google" time="21.859609">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="60.188326">
+<testcase classname="tests for performing search" name="As an end user I can search animolz using Google" time="21.125291">
 <system-out><![CDATA[Given I am on google page...................................................passed
-When I enter cute cats to the search field..................................passed
+When I enter "cute" "cat" to the search field...............................passed
+And I press Search button...................................................passed
+Then I should see search results............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="tests for performing search" name="As an end user I can search animolz using Google 2" time="19.735234">
+<system-out><![CDATA[Given I am on google page...................................................passed
+When I enter "good" "rat" to the search field...............................passed
+And I press Search button...................................................passed
+Then I should see search results............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="tests for performing search" name="As an end user I can search animolz using Google 3" time="19.327801">
+<system-out><![CDATA[Given I am on google page...................................................passed
+When I enter "gorgeous" "wombat" to the search field........................passed
 And I press Search button...................................................passed
 Then I should see search results............................................passed
 ]]></system-out>
