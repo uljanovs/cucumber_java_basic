@@ -12,12 +12,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import pages_sample.GooglePage;
+import pages_sample.NumbersPage;
 
 public class Task1StepDef {
     private WebDriver driver;
+    static NumbersPage numbersPage;
 
     public Task1StepDef() {
         this.driver = Hooks.driver;
+        numbersPage = PageFactory.initElements(Hooks.driver, NumbersPage.class);
     }
 
     @Given("^I am on the application page$")
@@ -28,14 +31,13 @@ public class Task1StepDef {
     @When("^I enter \"([^\"]*)\"$")
     public void iEnter(String input) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        driver.findElement(By.id("numb")).clear();
-        driver.findElement(By.id("numb")).sendKeys(input);
+        numbersPage.enterValue().sendKeys(input);
     }
 
 
     @And("^I press Submit button$")
     public void iPressSubmitButton() {
-        driver.findElement(By.className("w3-btn")).click();
+        numbersPage.submit();
     }
 
 
