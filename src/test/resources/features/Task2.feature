@@ -18,13 +18,15 @@ Feature: As a user I need to edit a list
     Examples:
       | name | job     |
       | Ivan | driver  |
+      | Petr | plumber |
+
 
   @second
   Scenario: As a user I edit a person
     When I press edit button
     And I see person page
-    And I change person name
-    And I change job title
+    And I change person name "John"
+    And I change job title "manager"
     And I press new edit button
     And I am on main page
     And I check edition name "John" and title "manager"
@@ -39,14 +41,15 @@ Feature: As a user I need to edit a list
     Then I see new list
 
 @Fourth
-  Scenario: A a user I clear field with new person
+  Scenario: As a user I clear field with new person
     When I click to add person button
    And I open a new page
     And I input a new name "Semen"
     And I input a new job title "manager"
   And I press clear fields button
     And I see clear fields
-    Then I press cancel button
+    And I press cancel button
+  Then I am redirecting on main page
 
 
 

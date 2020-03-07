@@ -90,15 +90,17 @@ public class TaskTwoSteps {
         assertEquals("https://uljanovs.github.io/site/tasks/enter_a_new_person_with_a_job.html?id=0", driver.getCurrentUrl());
     }
 
-    @And("^I change person name$")
-    public void iChangePersonName() {
+    @And("^I change person name \"([^\"]*)\"$")
+    public void iChangePersonName(String name) {
+        driver.findElement(By.xpath("//*[@id=\"name\"]")).clear();
         driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("John");
     }
 
 
-    @And("^I change job title$")
-    public void iChangeJobTitle() {
-        driver.findElement(By.xpath("//*[@id=\"job\"]")).sendKeys("Manager");
+    @And("^I change job title \"([^\"]*)\"$")
+    public void iChangeJobTitle(String title) {
+        driver.findElement(By.xpath("//*[@id=\"job\"]")).clear();
+        driver.findElement(By.xpath("//*[@id=\"job\"]")).sendKeys("manager");
     }
 
 
@@ -191,13 +193,18 @@ public class TaskTwoSteps {
         assertEquals("", driver.findElement(By.xpath("//*[@id='job']")).getAttribute("value"));
             }
 
-    @Then("^I press cancel button$")
+    @And("^I press cancel button$")
     public void iPressCancelButton() {
         driver.findElement(By.xpath("//*[@id=\"modal_button\"]")).click();
     }
 
 
+    @Then("^I am redirecting on main page$")
+    public void iAmRedirectingOnMainPage() {
+        assertEquals("https://uljanovs.github.io/site/tasks/list_of_people_with_jobs.html", driver.getCurrentUrl());
+    }
 }
+
 
 
 
