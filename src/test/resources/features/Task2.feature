@@ -44,8 +44,8 @@ Feature: As a user I need to edit a list
    And I open a new page
     And I input a new name "Semen"
     And I input a new job title "manager"
-   And I press clear fields button
-    And I see clear fields "",""
+  And I press clear fields button
+    And I see clear fields
     Then I press cancel button
 
 
