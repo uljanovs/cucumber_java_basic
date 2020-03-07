@@ -181,16 +181,15 @@ public class TaskTwoSteps {
 
 
     @And("^I press clear fields button$")
-  public void iPressClearFieldsButton() {
+ public void iPressClearFieldsButton() {
   driver.findElement(By.xpath("//*[@id=\"addPersonBtn\"]")).click();
  }
 
-    @And("^I see clear fields \"([^\"]*)\",\"([^\"]*)\"$")
-    public void iSeeClearFields(String arg1, String arg2) {
-        assertTrue("",driver.findElement(By.xpath("//*[@id='name']")).isDisplayed());
-        assertTrue("", driver.findElement(By.xpath("//*[@id='job']")).isDisplayed());
-
-    }
+    @And("^I see clear fields$")
+    public void iSeeClearFields() {
+        assertEquals("", driver.findElement(By.xpath("//*[@id='name']")).getAttribute("value"));
+        assertEquals("", driver.findElement(By.xpath("//*[@id='job']")).getAttribute("value"));
+            }
 
     @Then("^I press cancel button$")
     public void iPressCancelButton() {
