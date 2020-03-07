@@ -26,22 +26,26 @@ Feature: As a user I need to edit a list
     And I change person name
     And I change job title
     And I press new edit button
+    And I am on main page
+    And I check edition name "John" and title "manager"
     And I reset a page
-    Then I check result
+    Then I check result name "Mike" and title "Web Designer"
 
+@Third
   Scenario: As a user I remove a person
     When I press remove button
     And I see the result
     And I reset list
     Then I see new list
 
+@Fourth
   Scenario: A a user I clear field with new person
-    When I want to add a new peron "Semen"
-    And I open a new page
-    And I input a new name
+    When I click to add person button
+   And I open a new page
+    And I input a new name "Semen"
     And I input a new job title "manager"
-    And I press clear fields button
-    And I see clear fields
+   And I press clear fields button
+    And I see clear fields "",""
     Then I press cancel button
 
 
