@@ -180,10 +180,10 @@ public class TaskTwoSteps {
     }
 
 
-   // @And("^I press clear fields button$")
-  // public void iPressClearFieldsButton() {
-  // driver.findElement(By.xpath("//*[@id=\"addPersonBtn\"]")).click();
- // }
+    @And("^I press clear fields button$")
+  public void iPressClearFieldsButton() {
+  driver.findElement(By.xpath("//*[@id=\"addPersonBtn\"]")).click();
+ }
 
     @And("^I see clear fields \"([^\"]*)\",\"([^\"]*)\"$")
     public void iSeeClearFields(String arg1, String arg2) {
@@ -207,10 +207,5 @@ public class TaskTwoSteps {
 
 
 
-   /* @When("^I want to add a new peron \"([^\"]*)\"$")
-    public void iWantToAddANewPeron(String arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    } */
 
 
