@@ -5,28 +5,43 @@ Feature: Task2
     Given I am on People with jobs page
 
   @working_1
-  Scenario:
-    Given I am on People with jobs page
-    When I click AddPerson button
-    And I type name: "Jennifer"
-    And I enter job: "Actress"
-    And I press Add
-    Then I press reset list
-
-  @working_2
   Scenario Outline:
-    When I click EditPerson button
-    And I edit name: "<name>"
-    And I edit job: "<job>"
-    And I press Edit
-    Then I reset list
+    Given I am on People with jobs page
+    When I click AddPerson
+    And I type name: "<name>"
+    And I type job: "<job>"
+    And I press Add
+    And I check added name: "<name>"
+    And I check added job: "<job>"
+    Then I press reset list
 
     Examples:
       | name  | job       |
       | nick  | boss      |
       | kevin | assistant |
 
-  @working_3
-    When I click DeletePerson button
-    And I check list
-  #  Then I press reset
+  @working_2
+  Scenario:
+    When I click EditPerson
+    And I edit name: "AJ"
+    And I edit job: "QA"
+    And I press Edit
+    And I check edited name: "AJ"
+    And I check edited job: "QA"
+    Then I reset list
+
+ @working_3
+    Scenario:
+    When I click DeletePerson
+    And I check persons
+    Then I push update
+
+  @working_4
+  Scenario:
+    When I Add person
+    And I input name: "Jennifer"
+    And I input job: "Actress"
+    And I click clear
+    Then I check fields are clear all fields
+    And I click cancel
+    Then I am on home page
