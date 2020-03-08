@@ -1,36 +1,61 @@
-@Task2
+
+@TaskTwo
+
 Feature:
   As a test engineer
   I want to be able to write and execute a simple scenario
 
   Background:
-    Given I am on the page "People with jobs"
+    Given I am going to the page "People with jobs"
 
-  Scenario: Edit new person
+
+  Scenario Outline: Edit and add new person
     When I click Edit button
     Then I am redirected to "edit person" page
-    When I enter new name
-    And I enter new job
+    When I will enter new <name>
+    And I enter <job>
     And click on Edit
     Then I am redirected to home page
-    And new name and job is seen on home page
+    And new <name> is seen on home page
+    And new <job> is displayed
 
-  Scenario: Add new person
+    When button reset is clicked
+    Then original page items are shown
+
+
     When I click on Add button
-    Then I am redirected to "add new person" page
-    When I enter name "Victoria"
-    And I enter job "student"
+    Then "add new person" page opens
+    When I add firstname: <name>
+    And I add jobtitle: <job>
     And I press Add
-    Then I am redirected to home page again
-    And I see that new person is added
+    Then I am at home page again
+    And I see that new person <name> is added
+    And new person <job> is seen
+
+    When I am resetting a list
+    Then original person list is displayed
+
+    Examples:
+      | name    | job          |
+      | John    | developer    |
+      | Andrew  | web designer |
+      | Alexa   | student      |
+      | Antonio | boss         |
+      | Esther  | employee     |
+
 
   Scenario: Remove person
-    When I click on remove symbol
-    Then Removed person is not seen on home page
+    When I remove person
+    Then This employee is not visible
 
-  Scenario: Reset list
-    When I click on Reset List button
-    Then original persons are seen on home page
+    When list was reset
+    Then homepage is shown
 
+
+  Scenario: Clear all fields
+    When I will add person
+    And I will add name "Victoria"
+    And I will press Clear all fields button
+    Then field will be cleared
 
 

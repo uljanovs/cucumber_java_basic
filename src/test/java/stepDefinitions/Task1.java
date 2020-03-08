@@ -15,12 +15,11 @@ public class Task1 {
     }
 
     @Given("^I am on the page \"Enter a number\"$")
-    public void iAmOnTheGooglePage() throws Throwable {
+    public void iAmOnPageEnterANumber() throws Throwable {
         driver.get("https://uljanovs.github.io/site/tasks/enter_a_number");
     }
 
-
-    @When("^I enter too small number: (.+)$")
+    @When("^(.+) is submitted$")
     public void iEnterTooSmallNumber(int x) throws Throwable {
         driver.findElement(By.id("numb")).clear();
         driver.findElement(By.id("numb")).sendKeys(String.valueOf(x));
@@ -37,13 +36,13 @@ public class Task1 {
         assertEquals(message, driver.findElement(By.id("ch1_error")).getText());
     }
 
-    @When("^I enter too big number: (.+)$")
+    @When("^(.+) is entered$")
     public void iEnterTooBigNumbers(int z) throws Throwable {
         driver.findElement(By.cssSelector("#numb")).clear();
         driver.findElement(By.cssSelector("#numb")).sendKeys(String.valueOf(z));
     }
 
-    @And("^I press Submit button again$")
+    @And("^I click Submit button again$")
     public void iPressSubmitButton2() {
         driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/button")).click();
     }
@@ -53,7 +52,7 @@ public class Task1 {
         assertEquals(arg0, driver.findElement(By.id("ch1_error")).getText());
    }
 
-    @When("^I enter text: (.+)$")
+    @When("^I submit (.+)$")
     public void iEnterText(String text) throws Throwable {
         driver.findElement(By.cssSelector("#numb")).clear();
         driver.findElement(By.cssSelector("#numb")).sendKeys(text);
@@ -69,7 +68,7 @@ public class Task1 {
         assertEquals(arg1, driver.findElement(By.id("ch1_error")).getText());
     }
 
-    @When("^I enter number: 68$")
+    @When("^number is: 68$")
     public void iEnterNormalNumbers() throws Throwable {
         driver.findElement(By.cssSelector("#numb")).clear();
         driver.findElement(By.cssSelector("#numb")).sendKeys("68");

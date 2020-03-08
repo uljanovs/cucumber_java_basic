@@ -1,5 +1,6 @@
 
 @TaskOne
+
 Feature:
   As a test engineer
   I want to be able to write and execute a simple scenario
@@ -8,13 +9,13 @@ Feature:
     Given I am on the page "Enter a number"
 
   Scenario Outline:
-    When I enter too small number: <too small number>
+    When <too small number> is submitted
     And I press Submit button
     Then Error is shown: "Number is too small"
-    When I enter too big number: <too big number>
-    And I press Submit button again
+    When <too big number> is entered
+    And I click Submit button again
     Then I see error for too long numbers: "Number is too big"
-    When I enter text: <text>
+    When I submit <text>
     And I press Submit button one more time
     Then I see error: "Please enter a number"
 
@@ -26,7 +27,7 @@ Feature:
       | 15             |340           |Bootcamp     |
 
     Scenario:
-    When I enter number: 68
+    When number is: 68
     And I press Submit
     Then Square root for this number is shown
     And I click Ok
